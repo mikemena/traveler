@@ -4,11 +4,18 @@ import './NavBar.css';
 import { FiMenu, FiX } from 'react-icons/fi';
 
 const Navbar = ({ navbarLinks }) => {
-  // Determines if the "menu icon" was clicked or not. Note that this icon is only visible when the window width is small.
   const [menuClicked, setMenuClicked] = useState(false);
 
   const toggleMenuClick = () => {
     setMenuClicked(!menuClicked);
+  };
+
+  // This function will be called when a NavLink is clicked
+  const handleNavLinkClick = () => {
+    // If the menu is open (in mobile view), close it upon clicking a link
+    if (menuClicked) {
+      toggleMenuClick();
+    }
   };
 
   return (
@@ -27,7 +34,11 @@ const Navbar = ({ navbarLinks }) => {
         {navbarLinks.map((item, index) => {
           return (
             <li className="navbar_item" key={index}>
-              <NavLink className="navbar_link" to={item.url}>
+              <NavLink
+                className="navbar_link"
+                to={item.url}
+                onClick={handleNavLinkClick}
+              >
                 {item.title}
               </NavLink>
             </li>

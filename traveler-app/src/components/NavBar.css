@@ -18,24 +18,15 @@
   font-size: 2.5rem;
 }
 
-/*
-    This is the container for all the navbar links ( <ul> )
-    */
 .navbar_list {
   display: flex;
   list-style: none;
 }
 
-/*
-    This is a single item ( <li> ) in the list
-    */
 .navbar_item {
   white-space: nowrap;
 }
 
-/*
-    The anchor tag ( <a> ) for the navbar links
-    */
 .navbar_link {
   font-size: 0.85rem;
   text-decoration: none;
@@ -101,7 +92,10 @@
     margin: 0px;
     border-width: 0px;
     background-color: black;
-    opacity: 0.75;
+    opacity: 0.95;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 2em;
   }
 
   .navbar_link:hover {
