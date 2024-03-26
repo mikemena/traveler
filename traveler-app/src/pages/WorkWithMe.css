@@ -1,0 +1,141 @@
+.under-construction-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+}
+
+.content {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'MonteCarlo', cursive;
+  font-size: 5rem;
+  color: #292929;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #564440;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #666;
+}
+.work-with-me__contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.work-with-me__link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #564440;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.icon {
+  animation: pulsate 2s infinite;
+}
+
+/* Styles for screens up to 480px wide (typical cell phone size) */
+@media (max-width: 480px) {
+  .under-construction-container {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  nav li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .icon {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+  }
+}
+
+/* Styles for screens up to 480px wide (typical high res screens like iphone and pixel) */
+@media (max-width: 932px) and (orientation: landscape) {
+  .under-construction-container {
+    height: auto;
+    padding: 1rem;
+    min-height: 50vh;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 90px;
+  }
+}
