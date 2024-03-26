@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import './NavBar.css';
 import { FiMenu, FiX } from 'react-icons/fi';
 
@@ -26,9 +27,9 @@ const Navbar = ({ navbarLinks }) => {
         {navbarLinks.map((item, index) => {
           return (
             <li className="navbar_item" key={index}>
-              <a className="navbar_link" href={item.url}>
+              <NavLink className="navbar_link" to={item.url}>
                 {item.title}
-              </a>
+              </NavLink>
             </li>
           );
         })}

@@ -1,20 +1,20 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import HomePage from '../src/pages/HomePage';
 import WorkWithMePage from '../src/pages/WorkWithMe';
 
 const navbarLinks = [
   { title: 'Home', url: '/' },
-  { title: 'Trips', url: '/traveler/trips' },
-  { title: 'Services', url: '/traveler/services' },
-  { title: 'Contact', url: '/traveler/contact' },
+  { title: 'Trips', url: '/trips' },
+  { title: 'Services', url: '/services' },
+  { title: 'Contact', url: '/contact' },
 ];
 
 function App() {
   return (
-    <Router basename="/traveler/">
+    <Router>
       <NavBar navbarLinks={navbarLinks} />
       <Routes>
         <Route path="/" element={<HomePage />} />
