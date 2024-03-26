@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './WorkWithMe.css';
 import githubIconUrl from '../assets/github.svg';
 import upworkIconUrl from '../assets/upwork.svg';
@@ -38,9 +39,9 @@ const UnderConstructionPage = () => {
           <ul>
             {navbarLinks.map((link, index) => (
               <li key={index}>
-                <a className="work-with-me__link" href={link.url}>
+                <NavLink className="work-with-me__link" to={link.url}>
                   {link.title}
-                </a>
+                </NavLink>
               </li>
             ))}
           </ul>
