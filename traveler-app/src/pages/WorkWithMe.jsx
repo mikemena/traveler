@@ -14,14 +14,9 @@ const UnderConstructionPage = () => {
 
         <div className="work-with-me__contact-container">
           <h2>Send me an email</h2>
-          <a
-            href="mailto:mike.mena.dev@outlook.com?subject=Contact%20from%20Traveler%20App"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="nav-link"
-          >
-            <img className="icon" src={emailIconUrl} alt="GitHub Icon" />
-          </a>
+          <NavLink to="/contact" rel="noopener noreferrer" className="nav-link">
+            <img className="icon" src={emailIconUrl} alt="Email Icon" />
+          </NavLink>
         </div>
 
         <div className="work-with-me__contact-container">
