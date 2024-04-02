@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './WorkWithMe.css';
 import githubIconUrl from '../assets/github.svg';
-import upworkIconUrl from '../assets/upwork.svg';
+import emailIconUrl from '../assets/startmail.svg';
 
 const UnderConstructionPage = () => {
   const navbarLinks = [{ title: 'Go Back To The Beach', url: '/' }];
@@ -13,14 +13,14 @@ const UnderConstructionPage = () => {
         <h1>Lets work on something together!</h1>
 
         <div className="work-with-me__contact-container">
-          <h2>Reach me through Upwork</h2>
+          <h2>Send me an email</h2>
           <a
-            href="https://www.upwork.com/freelancers/~0156a711a4df4dddff?referrer_url_path=%2Fnx%2Fsearch%2Ftalent%2Fdetails%2F~0156a711a4df4dddff%2Fprofile"
+            href="mailto:mike.mena.dev@outlook.com?subject=Contact%20from%20Traveler%20App"
             target="_blank"
             rel="noopener noreferrer"
             className="nav-link"
           >
-            <img className="icon" src={upworkIconUrl} alt="GitHub Icon" />
+            <img className="icon" src={emailIconUrl} alt="GitHub Icon" />
           </a>
         </div>
 

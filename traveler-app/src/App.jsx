@@ -4,6 +4,7 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import HomePage from '../src/pages/HomePage';
 import WorkWithMePage from '../src/pages/WorkWithMe';
+import ContactPage from '../src/pages/Contact';
 
 const navbarLinks = [
   { title: 'Home', url: '/' },
@@ -20,7 +21,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/trips" element={<WorkWithMePage />} />
         <Route path="/services" element={<WorkWithMePage />} />
-        <Route path="/contact" element={<WorkWithMePage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </Router>
   );
